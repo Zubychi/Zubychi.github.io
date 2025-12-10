@@ -1,1 +1,162 @@
-"Hello World" 
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Denisa Rudincová</title>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="icon" href="" type="image/x-icon">
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://zubychi.github.io/fontawesome_drao/css/all.min.css">
+    </head>
+    <body>
+        <main>
+            <h1 id="title">Denisa Rudincová</h1>
+
+            <div id="topnav">
+                <a class="navlink" href="#about">About Me</a>
+                <a class="navlink" href="#skills">Skills</a>
+                <a class="navlink" href="#projects">Projects</a>
+                <a class="navlink" href="#contact">Contact</a>
+            </div>
+        </main>
+
+        <div id="content">
+            <div class="section" id="about">
+                <h2 class="section-title"><i class="fas fa-coffee"></i> About Me</h2>
+                <p>Hi! Hello! Welcome!</p>
+                <p>My name is Denisa Rudincová. I was born in Slovakia, but I currently live in the neighboring Czech Republic. I am a Software Engineering student at the Faculty of Informatics, Masaryk University.</p>
+                <p>I hold a Bachelor’s degree in Informatics from the same university, and I currently work as a Web Developer for its Information System.</p>
+                <p>In my free time, I love playing board games. Although I have my favorites (like Karak and Cartographers), I enjoy discovering new titles just as much (including tabletop role-playing games). I also enjoy computer games, with Legends of Runeterra being one of my top picks.</p>
+                <p>Music is another passion of mine: listening, playing, and writing. I play the guitar, the piano, sing, write lyrics and dabble in composing. I even own a kalimba! One of my hobbies is also over-analyzing songs on my Discover Weekly playlist.</p>
+            </div>
+
+            <div class="section" id="skills">
+                <h2 class="section-title"><i class="fas fa-tools"></i> Skills</h2>
+
+                <div id="stack">
+                    <div id="stack-best" class="stack-tier">
+                        <div id="html">
+                            <h3><i class="fab fa-html5"></i> HTML</h3>
+                        </div>
+
+                        <div id="css">
+                            <h3><i class="fab fa-css3-alt"></i> CSS</h3>
+                        </div>
+
+                        <div id="perl">
+                            <h3><i class="far fa-file-code"></i> Perl</h3>
+                        </div>
+
+                        <div id="oracle">
+                            <h3><i class="fas fa-database"></i> Oracle SQL</h3>
+                        </div>
+
+                        <div id="javascript">
+                            <h3><i class="fab fa-js"></i> JavaScript</h3>
+                        </div>
+                    </div>
+
+                    <div id="stack-good" class="stack-tier">
+                        <div id="csharp">
+                            <h3><i class="fas fa-code"></i> C#</h3>
+                        </div>
+
+                        <div id="unity">
+                            <h3><i class="fas fa-gamepad"></i> Unity</h3>
+                        </div>
+
+                        <div id="git">
+                            <h3><i class="fab fa-git-alt"></i> Git</h3>
+                        </div>
+
+                        <div id="python">
+                            <h3><i class="fab fa-python"></i> Python</h3>
+                        </div>
+
+                        <div id="java">
+                            <h3><i class="fab fa-java"></i> Java</h3>
+                        </div>
+                    </div>
+
+                    <div id="stack-familiar" class="stack-tier">
+                        <div id="c">
+                            <h3><i class="fas fa-code"></i> C</h3>
+                        </div>
+
+                        <div id="cpp">
+                            <h3><i class="fas fa-code"></i> C++</h3>
+                        </div>
+
+                        <div id="php">
+                            <h3><i class="fab fa-php"></i> PHP</h3>
+                        </div>
+
+                        <div id="mysql">
+                            <h3><i class="fas fa-database"></i> MySQL</h3>
+                        </div>
+                </div>
+            </div>
+
+            <div class="section" id="projects">
+                <h2 class="section-title"><i class="fas fa-laptop-code"></i> Projects</h2>
+
+                <div id="projects-list">
+
+                    <div class="project" id="bachelor-thesis">
+                        <h3>Version Control for&nbsp;Study Templates in&nbsp;Information System of&nbsp;Masaryk University</h3>
+                        <p>My bachelor's thesis. You can find it <a target="_blank" href="https://is.muni.cz/auth/th/xgo5v/">here</a>! I wrote my thesis in Slovak, but if you're interested, I will be happy to talk about in English. :)</p>
+                        <q>This bachelor thesis deals with the design and implementation of a template versioning system in the Information System of Masaryk University (IS&nbsp;MU). The Templates agenda is used for course registration by students, pass/fail control or internal programme evaluation, but the current system does not allow access to historical versions of templates, which makes it difficult to trace historical data such as courses or conditions that templates contained in the past. As a result of this work, I have implemented a versioning system that stores versions of the templates. The solution also includes applications that allow viewing each version over time and comparing their differences. The applications are not yet available in the production environment of the IS&nbsp;MU, but they provide a basis for improving the management of templates.</q>
+                    </div>
+
+                    <div class="project" id="celldescriptorlib">
+                        <h3>CellDescriptorLib</h3>
+                        <p>The Cell Descriptor Library serves as a tool designed to streamline the analysis of diverse descriptors, including mask descriptors and texture descriptors, within 2D+t datasets of cells. This project was developed during PV162 course at FI MUNI.</p>
+                        <i class="fab fa-github"></i> <a target="_blank" href="https://github.com/JanSkvaril/CellDescriptorLib">GitHub Repository</a>
+                        <a target="_blank" href="https://github.com/JanSkvaril/CellDescriptorLib/blob/main/docs/modules.png?raw=true"><img style="width: 100%; padding-top: 5px;" src="https://github.com/JanSkvaril/CellDescriptorLib/blob/main/docs/modules.png?raw=true" alt="CellDescriptorLib modules overview"/></a>
+                    </div>
+
+                    <div class="project" id="personal-website">
+                        <h3>Personal Website</h3>
+                        <img style="width: 30%; float: left; padding-right:15px; padding-top: 5px" src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExanJ0Y2d4Z2YzaHBrMTR5ZHFwNTlvc3c3MjVvaXFhbTA1N25mYTVhciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/JIX9t2j0ZTN9S/giphy.gif" alt="Cat typing on a laptop" />
+                        <p>The website you're scrolling through right now! Still a work in progress, but it's doing something.</p>
+                    </div>
+
+                    <div class="project" id="tyrian">
+                        <h3>Tyrian from Wish</h3>
+                        <p>A remake of the classic game Tyrian, created in Unity. This project was developed during <i>PV255: Game Development I</i> course at FI MUNI. </p>
+                    </div>
+
+                    <div class="project" id="pyramid-keeper">
+                        <h3>Pyramid Keeper</h3>
+                        <p>A single player swarm game created in Unity where you, in role of the pyramid keeper, protect the pyramid(s) from undead enemies.</p>
+                    </div>
+
+                    <div class="project" id="docx-to-bbcode">
+                        <h3>.docx to BBCode converter</h3>
+                        <p>A Python script running on the backend of a website that converts .docx files to BBCode format. Hosted <a target="_blank" href="https://doc-to-bbcode.onrender.com/"> here</a>. </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="section" id="contact">
+                <h2 class="section-title"><i class="far fa-address-book"></i> Contact</h2>
+                <ul>
+                    <li><i class="fas fa-at"></i> Email: <a href="mailto:denisa.rudinec@gmail.com">denisa.rudinec@gmail.com</a></li>
+                    <li><i class="fab fa-github"></i> GitHub: <a target="_blank" href="https://github.com/Zubychi/">Zubychi</a></li>
+                    <li><i class="fab fa-linkedin"></i> LinkedIn: <a target="_blank" href="https://www.linkedin.com/in/denisa-rudincov%C3%A1-011822216/">Denisa Rudincová</a></li>
+                </ul>
+            </div>
+        </div>
+
+    <script src="script.js"></script>
+    </body>
+</html>

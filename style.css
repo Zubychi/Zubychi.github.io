@@ -1,0 +1,118 @@
+/* variables*/
+:root {
+    --primary-color: #E6D2AA;
+    --secondary-color: #F1EFDC;
+    --ternary-color: #F1EFDC;
+    --background-color: #42032C;
+    --background-color-alt: #D36B00;
+    --font-family: 'Space Mono', monospace;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--background-color);
+    font: 16px 'Space Mono', monospace;
+    color: var(--primary-color);
+    padding: 0px 20px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a {
+    color: var(--ternary-color);
+}
+
+.section {
+    margin-bottom: 4em;
+}
+
+#title {
+    text-align: center;
+}
+
+#topnav {
+    width: 75%;
+    border-radius: 5px;
+    background-color: var(--background-color-alt);
+    text-align: center;
+}
+
+#topnav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+#topnav a:hover {
+    text-decoration: underline;
+}
+
+.stack-tier {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+#projects-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+@media (max-width: 1200px) {
+    #projects-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+#bachelor-thesis {
+    grid-column: span 2;
+}
+
+.project {
+    background-color: var(--background-color-alt);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.project h3 {
+    margin-top: 0.5em;
+    text-align: center
+}
+
+.project q {
+    display: block;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: italic;
+    background-color: var(--background-color);
+}
+
+#contact ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.glow {
+    animation: glow-animation 1s ease-in-out 0s;
+}
+
+@keyframes glow-animation {
+    0%, 100% { text-shadow: none; }
+    50% { text-shadow: 0 0 8px var(--ternary-color); }
+}
