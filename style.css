@@ -95,6 +95,10 @@ a {
     grid-column: span 2;
 }
 
+#others {
+    grid-column: span 2;
+}
+
 .project {
     background-color: var(--background-color-alt);
     padding: 15px;
