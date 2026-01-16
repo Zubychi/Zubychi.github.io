@@ -58,17 +58,22 @@ a {
     text-decoration: underline;
 }
 
-.img-wrap {
-    display: flex;
-    float: left;
-    padding-right: 15px;
-    padding-top: 5px;
-}
-
 #avatar-img {
-    width: 300px;
+    float: left;
+    width: 20%;
+    min-width: 200px;
+    margin: 5px 15px 10px 0;
     border-radius: 10px;
     border: 5px solid var(--background-color-alt);
+}
+
+#catto-gif {
+    width: 30%;
+    min-width: 100px;
+    float: left;
+    margin: 0px 15px 0px 0px;
+    border-radius: 10px;
+    border: 5px solid var(--background-color);
 }
 
 .stack-tier {
@@ -83,13 +88,6 @@ a {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
-
-@media (max-width: 1200px) {
-    #projects-list {
-        grid-template-columns: 1fr;
-    }
-}
-
 
 #bachelor-thesis {
     grid-column: span 2;
@@ -132,4 +130,27 @@ a {
 @keyframes glow-animation {
     0%, 100% { text-shadow: none; }
     50% { text-shadow: 0 0 8px var(--ternary-color); }
+}
+
+@media (max-width: 1200px) {
+    #projects-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #bachelor-thesis,
+    #others {
+        grid-column: span 2;
+    }
+}
+
+
+@media (max-width: 768px) {
+    #projects-list {
+        grid-template-columns: 1fr;
+    }
+
+    #bachelor-thesis,
+    #others {
+        grid-column: span 1;
+    }
 }
