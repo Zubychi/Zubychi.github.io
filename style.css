@@ -71,7 +71,7 @@ a {
     width: 30%;
     min-width: 100px;
     float: left;
-    margin: 0px 15px 0px 0px;
+    margin: 5px 15px 0px 0px;
     border-radius: 10px;
     border: 5px solid var(--background-color);
 }
@@ -116,6 +116,22 @@ a {
     font-weight: 400;
     font-style: italic;
     background-color: var(--background-color);
+}
+
+.tech-stack {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.tech-badge {
+    display: inline-block;
+    background-color: var(--background-color);
+    opacity: 0.8;
+    color: var(--primary-color);
+    border-radius: 20px;
+    padding: 5px 20px;
+    margin: 5px 5px;
+    font-size: 0.75em;
 }
 
 #contact ul {
