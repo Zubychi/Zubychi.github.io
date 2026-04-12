@@ -1,18 +1,17 @@
-document.querySelectorAll('.navlink').forEach(link => {
-    link.addEventListener('click', function(e) {
-
-        const targetId = this.getAttribute('href').substring(1);
+document.querySelectorAll(".site-nav__link").forEach(link => {
+    link.addEventListener("click", function () {
+        const targetId = this.getAttribute("href").substring(1);
         const targetSection = document.getElementById(targetId);
 
         if (!targetSection) return;
 
-        const h2 = targetSection.querySelector('h2');
-        if (!h2) return;
+        const heading = targetSection.querySelector(".section__title");
+        if (!heading) return;
 
-        h2.classList.add('glow');
+        heading.classList.add("section__title--glow");
 
         setTimeout(() => {
-            h2.classList.remove('glow');
+            heading.classList.remove("section__title--glow");
         }, 2000);
     });
 });
